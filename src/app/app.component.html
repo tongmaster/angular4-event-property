@@ -1,0 +1,30 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+
+  <!-- property binding -->
+  <app-msg></app-msg>
+  <app-site></app-site>
+
+  <div>---------------------------------------------------------</div>
+
+  
+ <br/>
+<br/>
+<br/>
+<!-- event binding -->
+  <event-test></event-test>
+</div>
+
+
+
+
+<h3>{{title}}</h3>
+
+<app-person (updateEmployee) ="saveData($event)"
+	[student] ="studentObj"> </app-person>
+
+<p>{{studentObj.fname + ' '+ studentObj.lname}} </p>
+
+<p>{{fullName}}</p>
+
+
